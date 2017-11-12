@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/com/etc/pili8la/biz=UTF-8
+encoding//src/com/etc/pili8la/biz/AdminBiz.java=UTF-8
+encoding//src/com/etc/pili8la/biz/ComicBiz.java=UTF-8
+encoding//src/com/etc/pili8la/biz/CommentBiz.java=UTF-8
+encoding//src/com/etc/pili8la/biz/MusicBiz.java=UTF-8
+encoding//src/com/etc/pili8la/biz/TypeBiz.java=UTF-8
+encoding//src/com/etc/pili8la/bizimpl=UTF-8
+encoding//src/com/etc/pili8la/dao=UTF-8
+encoding//src/com/etc/pili8la/daoimpl=UTF-8
+encoding//src/com/etc/pili8la/entity=UTF-8
+encoding//src/com/etc/pili8la/servlet=UTF-8
+encoding//src/com/etc/pili8la/servlet/ShowComicServlet.java=GBK
+encoding//src/com/etc/pili8la/util=UTF-8
+encoding//src/com/etc/pili8la/util/MyPage.java=GBK

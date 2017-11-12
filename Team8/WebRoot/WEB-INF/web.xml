@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VideoServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.VideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MusicServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.MusicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.CheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ComicServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.ComicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowComicServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.ShowComicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TypeServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.TypeServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AinfoServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.AinfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.CommentServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.etc.pili8la.servlet.UpdateUserServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>VideoServlet</servlet-name>
+    <url-pattern>/VideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MusicServlet</servlet-name>
+    <url-pattern>/MusicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckServlet</servlet-name>
+    <url-pattern>/CheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ComicServlet</servlet-name>
+    <url-pattern>/ComicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowComicServlet</servlet-name>
+    <url-pattern>/ShowComicServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AinfoServlet</servlet-name>
+    <url-pattern>/AinfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TypeServlet</servlet-name>
+    <url-pattern>/TypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <filter>
+  <filter-name>EncodingFilter</filter-name>
+  <filter-class>com.etc.pili8la.filter.EncodingFilter</filter-class>
+  <init-param>
+  <param-name>encoding</param-name>
+  <param-value>utf-8</param-value>
+  </init-param>
+  </filter>
+  <filter-mapping>
+  <filter-name>EncodingFilter</filter-name>
+   <url-pattern>/*</url-pattern> 
+  </filter-mapping>
+  
+  <filter>  
+      <filter-name>LoginFilter</filter-name>  
+      <filter-class>com.etc.pili8la.filter.LoginFilter</filter-class>  
+  </filter>  
+  <filter-mapping>  
+      <filter-name>LoginFilter</filter-name>  
+      <url-pattern>/homepage.jsp</url-pattern>
+	  <url-pattern>/music-demo.jsp</url-pattern>
+	  <url-pattern>/video-demo.jsp</url-pattern> 
+	  <url-pattern>/VideoServlet</url-pattern> 
+	  <url-pattern>/MusicServlet</url-pattern>  
+  </filter-mapping>
+  
+  <filter>  
+      <filter-name>AdminFilter</filter-name>  
+      <filter-class>com.etc.pili8la.filter.AdminFilter</filter-class>  
+  </filter>  
+  <filter-mapping>  
+      <filter-name>AdminFilter</filter-name>  
+  	  <url-pattern>/admin.jsp</url-pattern>
+	  <url-pattern>/admininfo.jsp</url-pattern>
+	  <url-pattern>/comic.jsp</url-pattern>
+	  <url-pattern>/music.jsp</url-pattern>
+	  <url-pattern>/video.jsp</url-pattern>
+	  <url-pattern>/upload.jsp</url-pattern>
+	  <url-pattern>/uploadcomic.jsp</url-pattern>
+	  <url-pattern>/uploadmusic.jsp</url-pattern>
+	  <url-pattern>/uploadvideo.jsp</url-pattern>  
+  </filter-mapping>
+  
+  <filter>  
+      <filter-name>CommentFilter</filter-name>  
+      <filter-class>com.etc.pili8la.filter.CommentFilter</filter-class>  
+  </filter>  
+  <filter-mapping>  
+      <filter-name>CommentFilter</filter-name> 
+      <url-pattern>/VideoServlet</url-pattern>
+      <url-pattern>/MusicServlet</url-pattern>
+	  <url-pattern>/music-demo.jsp</url-pattern>
+	  <url-pattern>/video-demo.jsp</url-pattern> 
+  </filter-mapping>
+  
+  <!-- 欢迎页面 index.jsp -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
