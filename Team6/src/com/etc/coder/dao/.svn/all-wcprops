@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/program6/!svn/ver/323/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao
+END
+EducationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/program6/!svn/ver/205/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/EducationDao.java
+END
+TechnologytypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/program6/!svn/ver/184/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/TechnologytypeDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/program6/!svn/ver/142/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/UserDao.java
+END
+BasicDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/program6/!svn/ver/205/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/BasicDao.java
+END
+WorkDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/program6/!svn/ver/205/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/WorkDao.java
+END
+JobExpectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/program6/!svn/ver/237/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/JobExpectDao.java
+END
+MessageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/program6/!svn/ver/145/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/MessageDao.java
+END
+CriticismDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/program6/!svn/ver/190/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/CriticismDao.java
+END
+CompanyResumeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/program6/!svn/ver/323/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/CompanyResumeDao.java
+END
+SeeResumeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/program6/!svn/ver/269/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/SeeResumeDao.java
+END
+ResumeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/program6/!svn/ver/272/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/ResumeDao.java
+END
+CompanyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/program6/!svn/ver/279/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/CompanyDao.java
+END
+ProjectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/program6/!svn/ver/205/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/ProjectDao.java
+END
+CityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/program6/!svn/ver/38/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/CityDao.java
+END
+ComjobDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/program6/!svn/ver/228/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/ComjobDao.java
+END
+ManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/program6/!svn/ver/159/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/ManagerDao.java
+END
+JobDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/program6/!svn/ver/323/7_%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81/Team6/src/com/etc/coder/dao/JobDao.java
+END

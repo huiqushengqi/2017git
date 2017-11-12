@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+   <Resource name="jdbc/sct" auth="Container" type="javax.sql.DataSource"
+   driverClassName="oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+   username="sct" password="123" maxActive="2000" maxIdle="10" maxWait="-1"/>
+</Context>
