@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.oneMind.dao.StudentDao">
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<resultMap type="com.oneMind.entity.Student" id="mystudent">
+	<id column="student_id" property="student_id"></id>
+	
+	<result column="student_name" property="student_name"></result>
+	<result column="student_password" property="student_password"></result>
+	<result column="student_number" property="student_number"></result>
+	<result column="student_sex" property="student_sex"></result>
+	<result column="student_head" property="student_head"></result>
+
+	
+	</resultMap>
+	
+	
+	<select id="queryallbyhot" resultMap="mystudent">
+	select * from T_student  order by student_hot desc
+	</select>
+	
+
+	<select id="queryStudentById" resultMap="mystudent">
+
+	
+
+	
+	select * from t_Student where student_id=#{0}
+	
+	</select>
+	
+	<select id="checkLogin" resultMap="mystudent">
+	select * from t_student where student_name=#{0} and student_password=#{1}
+	</select>
+	
+	<update id="updateStudent" parameterType="com.oneMind.entity.Student">
+	update t_student set student_name=#{student_name,jdbcType=VARCHAR},student_birthday=#{student_birthday,jdbcType=VARCHAR},student_sex=#{student_sex,jdbcType=VARCHAR},student_head=#{student_head,jdbcType=VARCHAR} where student_id=${student_id}
+	</update>
+	<update id="addStudentHot" parameterType="integer">
+	update t_student set Student_hot=Student_hot+1 where student_id=#{0}
+	
+	</update>
+	
+	<select id="checkLoginx" resultType="com.oneMind.entity.Student">
+	select * from t_student where student_name=#{0} and student_password=#{1}
+	</select>
+	
+	</mapper>
+	

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.oneMind.dao.PostDao">
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<resultMap type="com.oneMind.entity.Post" id="mypost">
+	<id column="post_id" property="post_id"></id>
+	
+	<result column="post_title" property="post_title"></result>
+	<result column="post_date" property="post_date"></result>
+	<result column="post_depict" property="post_depict"></result>
+	<result column="post_picture" property="post_picture"></result>
+	<result column="post_hot" property="post_hot"></result>
+	<association property="post_type" javaType="com.oneMind.entity.Type">
+	<id column="type_id" property="type_id"></id>
+	<result column="type_name" property="type_name"></result>
+	</association>
+	<association property="post_student" javaType="com.oneMind.entity.Student">
+	<id column="student_id" property="student_id"></id>
+	<result column="student_name" property="student_name"></result>
+	</association>
+	</resultMap>
+	
+	<select  id="querryWall" parameterType="com.oneMind.entity.Type" resultMap="mypost">
+	select s.* from (select rownum as num,t.* from (select * from （select * from t_post where post_type=(select type_id from t_type where type_name=#{0})） order by post_id)t  where rownum &lt;=#{1}*#{2}) s where s.num&gt;(#{1}-1)*#{2};
+	</select>
+	<select id="queryallbyhot" resultMap="mypost">
+	select * from T_post,T_student  order by post_hot desc
+	</select>
+	<select id="countWall" parameterType="String" resultType="java.lang.Integer">
+	
+	select count(*) from t_post where post_type=(select type_id from t_type where type_name=#{type_name})
+	
+	</select>
+	
+	</mapper>
+	

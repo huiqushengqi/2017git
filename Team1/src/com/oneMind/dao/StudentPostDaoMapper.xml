@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.oneMind.dao.StudentPostDao">
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<resultMap type="com.oneMind.entity.Post" id="mypost1">
+	<id column="post_id" property="post_id"></id>
+	<result column="post_title" property="post_title"></result>
+	<result column="post_date" property="post_date"></result>
+	<result column="post_depict" property="post_depict"></result>
+	<result column="post_picture" property="post_picture"></result>
+	<result column="post_hot" property="post_hot"></result>
+	<association property="post_student" javaType="com.oneMind.entity.Student">
+	<id column="student_id" property="student_id"></id>
+	<result column="student_name" property="student_name"></result>
+	</association>
+	<association property="post_type" javaType="com.oneMind.entity.Type">
+	<id column="type_id" property="type_id"></id>
+	<result column="type_name" property="type_name"></result>
+	</association>
+	</resultMap>
+	<!-- 查询对应帖子评论 -->
+	<resultMap type="com.oneMind.entity.Comment" id="mycomment">
+	<id column="comment_id" property="comment_id"></id>
+	<result column="comment_content" property="comment_content"></result>
+	<result column="comment_date" property="comment_date"></result>
+	<result column="comment_reply" property="comment_reply"></result>
+	<association property="comment_student" javaType="com.oneMind.entity.Student">
+	<id column="student_id" property="student_id"></id>
+	<result column="student_name" property="student_name"></result>
+	</association>
+	<association property="comment_post" javaType="com.oneMind.entity.Post">
+	<id column="post_id" property="post_id"></id>
+	</association>
+	</resultMap>
+	
+	<select  id="queryPostByTypeAndStudentId" resultMap="mypost1">
+	SELECT * FROM(SELECT A.*,ROWNUM RN FROM (SELECT * FROM t_post where post_student=#{0} and post_type=#{1}) A WHERE ROWNUM &lt;=#{2}),t_type WHERE RN &gt;=#{3} and type_id=post_type
+	</select>
+	
+	<select id="countPostByType" resultType="java.lang.Integer">
+	select count(*) as a from t_post where post_student=#{0} and post_type=#{1}
+	</select>
+
+	<select id="queryCommentByPostId" resultMap="mycomment">
+	select * from t_comment,t_student where comment_post=#{0} and student_id=comment_student
+	</select>
+
+	<delete id="delPostById">
+	delete from t_post where post_id=#{0}
+	</delete>
+	
+
+
+
+	</mapper>

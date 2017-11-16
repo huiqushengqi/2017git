@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oneMind.dao.MarketDao">
+<resultMap type="post" id="mypost">
+<id column="post_id" property="post_id"/>
+  <result column="post_title"   property="post_title"/>
+ <result column="post_date"   property="post_date"/>
+<result column="post_hot"   property="post_hot"/>
+<association property="post_student" column="post_student" javaType="student"   select="queryStudentById"></association>
+</resultMap>
+
+<resultMap type="com.oneMind.entity.Comment" id="myCom">
+<id column="comment_id" property="comment_id"/>
+  <result column="comment_content"   property="comment_content"/>
+ <result column="comment_date"   property="comment_date"/>
+<association property="comment_student" column="comment_student" javaType="student"   select="queryStudentById"></association>
+</resultMap>
+
+<resultMap type="post" id="mystu">
+<id column="post_id" property="post_id"/>
+  <result column="post_title"   property="post_title"/>
+ <result column="post_date"   property="post_date"/>
+<result column="post_hot"   property="post_hot"/>
+<result column="post_depict" property="post_depict"/>
+<association property="post_student" column="post_student" javaType="student"   select="queryStudentById"></association>
+</resultMap>
+
+<select id="queryPostNum" resultType="integer">
+select count(post_id) from T_POST WHERE POST_TYPE=1 order by post_id
+</select>
+
+<select id="queryPostByPage" resultMap="mypost">
+SELECT B.* FROM  (  SELECT A.*, ROWNUM RN  FROM (SELECT * FROM T_POST T WHERE POST_TYPE=1 ORDER BY POST_ID ) A  
+WHERE ROWNUM &lt;= #{0}*#{1} ) B 
+WHERE RN &gt;(#{0}-1)*#{1}
+</select>
+
+<select id="queryPostsByName" resultType="integer">
+select count(post_id) p from T_POST WHERE POST_TYPE=1
+</select>
+
+<select id="queryStudentById"  resultType="student">
+SELECT * FROM T_STUDENT where student_id=#{id}
+</select>
+
+
+
+<select id="queryPostById" resultMap="mystu">
+SELECT * FROM T_POST WHERE POST_ID=#{0}
+
+</select>
+<select id="queryComByPage" resultMap="myCom">
+SELECT B.* FROM  (  SELECT A.*, ROWNUM RN  FROM (SELECT * FROM T_COMMENT T WHERE COMMENT_POST=#{0} ORDER BY COMMENT_ID ) A  
+WHERE ROWNUM &lt;= #{1}*#{2} ) B 
+WHERE RN &gt;(#{1}-1)*#{2}
+</select>
+
+<select id="queryComNum" resultType="integer">
+select count(comment_id) from T_COMMENT WHERE COMMENT_POST=#{0} order by COMMENT_ID
+</select>
+
+<insert id="addComByPosts" parameterType="com.oneMind.entity.Comment" >
+insert into t_comment(comment_student,comment_post,comment_content,comment_date) 
+values(#{comment_student.student_id},#{comment_post.post_id},#{comment_content},#{comment_date})
+</insert>
+
+<insert id="addpost1" parameterType="com.oneMind.entity.Post" >
+	insert into t_post(post_title,post_date,post_depict,post_picture,post_hot,post_state,post_type,post_student) 
+	values(#{post_title},#{post_date},#{post_depict},#{post_picture},#{post_hot},#{post_state},#{post_type.type_id},#{post_student.student_id})
+</insert>
+
+</mapper>

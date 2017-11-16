@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间,一般情况下与包名一致，为了对sql语句进行隔离，方便管理 ，mapper开发dao方式，使用namespace有特殊作用 -->
+<mapper namespace="com.oneMind.dao.PostdDao">  <!-- namespace 不能写test关键字 -->
+
+<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<resultMap type="com.oneMind.entity.Post" id="mypost">
+	<id column="post_id" property="post_id"></id>
+	<result column="post_title" property="post_title"></result>
+	<result column="post_date" property="post_date"></result>
+	<result column="post_depict" property="post_depict"></result>
+	<result column="post_picture" property="post_picture"></result>
+	<result column="post_hot" property="post_hot"></result>
+		<association property="post_student" javaType="com.oneMind.entity.Student"  >
+	<id column="student_id" property="student_id"></id>
+	<result column="type_name" property="type_name"></result>
+	</association>
+	</resultMap>
+
+
+ <!-- 如果采用el表达式注入，${参数名}这个本身只有值，没有类型，如果是字符类型的值，记得手动加上引号 -->
+<select id="queryById" resultMap="mypost">
+select t.*,s.* from T_POST t,t_student s where t.post_student=s.student_id
+</select>
+
+<select id="queryByPage" resultMap="mypost">
+
+
+</select>
+
+
+
+
+
+
+
+
+</mapper>
+

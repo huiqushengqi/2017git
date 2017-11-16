@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.oneMind.dao.ManagerDao">
+	
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<select id="checkLogin" resultType="com.oneMind.entity.Manager">
+	select * from t_manager where manager_name=#{0} and manager_password=#{1}
+	</select>
+
+	</mapper>
