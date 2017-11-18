@@ -1,0 +1,81 @@
+/*
+ *@Description: homestyle.css
+ *@Version:	    v3.0(2014-08-12 10:00)
+ *@Website:	    http://home.19lou.com/
+ *@Author:      jianghui
+*/
+
+
+/*E=鏉窞19妤� header*/
+.layouter{margin:0 auto;width:1190px;}	
+.header-city dd a,.header-city dd a:visited {color: #808080;float: left;padding: 2px 5px;word-break: keep-all;}
+.header-hd {float: left;position: relative;width: 140px;z-index: 1000;}
+.header-city .header-cities {background: none repeat scroll 0 0 #fff;border: 1px solid #cdcdcd;overflow: hidden;padding: 8px;width: 232px;}
+.header-fr{float:right;position:relative;width:75px;}
+.lou-city{float: right;position: relative; width: 75px;z-index: 11;}
+.lou-city .lou-logo{ float: right;height: 25px;line-height: 25px;padding-left: 1px; position: relative;top: 1px;width: 75px;z-index: 2;}
+.lou-logo .logo{float:right;height:25px;background:none;}
+.lou-logo .triangle {background:url("images/headnav_icon.png") 0 -419px no-repeat;cursor: pointer;float: right;height: 25px;width: 16px;}
+.header-fr dt a, .header-fr dt a:hover, .header-fr dt a:visited {color: #666;text-decoration: none;}
+.lou-city dd{display:none;}
+.lou-city-on dd{display:block;}
+.lou-city-on .lou-logo{padding-left:0;height:24px;line-height:23px;border:1px solid #CDCDCD;border-bottom:none;background-color:#FFF}
+.lou-city-on .logo{height:24px;background-position:-350px -36px}
+.lou-city-on .triangle{height:24px;background-position:0 -459px}
+.lou-city-on .lou-city-cont{position:absolute;top:25px;right:0;box-shadow:0 2px 3px #DDD;overflow:visible;_overflow:hidden}
+.lou-city .lou-cities {background: none repeat scroll 0 0 #fff;border: 1px solid #cdcdcd;overflow: hidden;padding: 8px;width: 348px;}
+.lou-city dd a,.lou-city dd a:visited {color: #808080;float: left;padding: 2px 5px;word-break: keep-all;}
+.header-fr .lou-city dd a:hover {background: none repeat scroll 0 0 gray;border-radius: 2px;color: #fff;text-decoration: none;}
+.lou-cities dt {text-align:left;font-weight: 700;color:#808080}
+.lou-cities dd {overflow: hidden;}
+
+#headerCity .header-logo .logo{ background: none; padding-left: 10px}
+#headerCity,#headerCity	.header-logo{width: 80px;}
+/*E=鏉窞19妤� header**/
+
+
+/*S=pics-index-nav*/
+	.pics-nav-wrap{ margin:0 0 40px; background:#fb435d url(images/pics_nav_bg.png) top no-repeat;}
+		.pics-nav{ position:relative; margin:0 auto; padding-left:10px; width:1180px; height:40px;}
+			.pics-logo-area{ display:block; padding:0 0 0 64px; width:125px; height:55px;}
+				.pics-logo-area h1{ text-indent:-9999em; overflow:hidden;}
+			.pics-logo-cartoon{ position:absolute;top:15px; left:195px; width:121px; height:112px; background:url(images/pics_logo_cartoon.png) no-repeat;}
+			.pics-nav-list{}
+				.pics-nav-list li{ position:relative; float:left; margin:0 20px 0 0; height:40px; font:400 18px/40px "microsoft yahei"}
+					.pics-nav-list li a,.pics-nav-list li a:visited{ color:#fff; text-decoration:none; white-space:nowrap;}
+                    .pics-nav-list li a:hover { color: #ffee9d;}
+					.Pnav-corner{position:absolute; bottom:0; left:35%; width:0; height:0; border:6px solid #dad5ca;border-color:transparent transparent #fff transparent;overflow:hidden;}
+					.pics-demoIcon{ position:absolute; right:-5px; top:-10px; width:61px; height:20px; background:url(images/nav_tip.png) no-repeat;}
+/*E=pics-index-nav*/
+
+.go-top{position:fixed;padding-top:48px;right:15px;bottom:300px;height:110px;background:url("images/go_top.png") 7px 0 no-repeat;text-align:center;z-index:80;_position:absolute;}
+.go-top a{display:block;width:50px;background:#fff url("images/go_top.png") 0 0 no-repeat;border:1px solid #e1e1e1;}
+.go-top a:hover{border-color:#c7c7c7;background-color:#c7c7c7;}
+.go-top a span{display:none;color:#fff;font:400 12px/1.5 "SimSun";text-decoration:none;}
+.go-top a:hover span{display:block;}
+.go-top .close-item{position:absolute;left:7px;top:2px;width:36px;height:45px;border:none;background:none;}
+.go-top .close-item:hover{background:none;}
+.go-top .close-go-top{display:none;position:absolute;top:-23px;margin-left:12px;padding-top:22px;height:0;width:23px;background-position:-40px -11px;border-radius:12px;overflow:hidden;}
+.go-top .close-go-top:hover{background-position:-40px 6px;}
+.go-top-hover .close-go-top,.go-top-hover .close-go-top:visited{display:block;}
+.go-top .customer-service,.go-top .back-to-top{margin-bottom:5px;height:50px;background-position:-60px 13px;border-radius:25px;}
+.go-top .customer-service span{margin:7px 0 0 8px;width:37px;*margin-left:2px;}
+.go-top .back-to-top{background-position:-102px 13px;}
+.go-top .back-to-top span{line-height:50px;}
+.go-top .customer-service:hover,.go-top .back-to-top:hover{background-position:-50px -149px;background-color:#baa26b;text-decoration:none;color:#fff;}
+
+/*S=瀹跺眳鐑棬娲诲姩闆�*/
+.hot-activity-wrap{margin: 0 auto;width: 980px;}
+.activity-mod{margin-bottom:20px;padding:20px 0 20px 570px;width: 390px;height: 300px;}
+.activity-detail{padding:25px;width: 360px;height: 250px;margin-right: -20px;background: #fff;box-shadow: 1px 1px 3px rgba(0,0,0,.1);}
+.activity-detail h4{margin-bottom:12px;height:30px;font: 700 24px/30px simhei;color: #c8a85f;overflow: hidden;}
+.activity-detail dl{margin-bottom: 12px;}
+.activity-detail dt,.activity-detail dd{float: left;font:400 14px/20px "microsoft yahei";color: #666;height: 20px;overflow: hidden;}
+.activity-detail dt{margin-right: 10px;width: 70px;}
+.activity-detail dd{width: 240px;word-break:break-all;}
+.activity-detail .sales{margin-bottom: 20px;}
+.activity-detail .sales dd{height:60px;overflow: hidden;}
+.activity-detail .vote-btn{padding-left: 80px;color:#999;font:400 12px/38px "microsoft yahei";}
+.activity-detail .vote-btn a{margin-right:10px;display: inline-block;width:128px;height: 38px;color:#fff;text-align:center;font:400 18px/38px "microsoft yahei";background: #c8a85f;border-radius: 3px; }
+.activity-detail .vote-btn em{color: #ff6600;}
+/*E=瀹跺眳鐑棬娲诲姩闆�*/

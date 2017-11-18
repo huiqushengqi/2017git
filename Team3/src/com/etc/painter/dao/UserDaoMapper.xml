@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.UserDao">
+	
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<select id="checkLogin2" resultType="com.etc.painter.entity.User">
+	select * from t_user where user_name=#{0} and user_pwd=#{1}
+	</select>
+
+	<select id="queryUserById" resultType="User">
+	select * from t_user where user_id=#{0}	
+	</select>
+	<!-- 添加用户 -->
+	<insert id="adduser" parameterType="User">
+	insert into t_user(user_id,user_name,user_pwd,user_tel,user_img) values(seq_user.nextval,'${user_name}','${user_pwd}','${user_tel}','${user_img}')
+	</insert>
+	<!-- 查询电话号码是否存在 -->
+	<select id="querybynum" resultType="User" parameterType="java.lang.String">
+	select * from t_user where user_tel=#{0}	
+	</select>
+	<select id="querybynum1" resultType="User" >
+	select * from t_user where user_tel=#{user_tel}	
+	</select>
+	<!-- 查询用户名是否存在 -->
+	<select id="querybyname" resultType="User" parameterType="java.lang.String">
+	select * from t_user where user_name=#{0}	
+	</select>
+	<!-- 根据id查询用户 -->
+	<select id="querybyid" resultType="User" >
+	select * from t_user where user_id=#{0}	
+	</select>
+	<!-- 根据用户id修改用户信息 -->
+	<update id="changeuser"  parameterType="User">
+	update t_user set user_name=#{user_name},user_sex=#{user_sex},user_tel=#{user_tel},user_addr=#{user_addr},user_email=#{user_email},user_post=#{user_post},user_img=#{user_img},user_collect=#{user_collect} where user_id=#{user_id}
+	</update>
+	
+	<update id="updateUserCollect">
+		update t_user set user_collect=#{0} where user_id=#{1}
+	</update>
+	</mapper>

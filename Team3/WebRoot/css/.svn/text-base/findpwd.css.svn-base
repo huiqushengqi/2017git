@@ -1,0 +1,894 @@
+/*
+
+ *@Description: rigister.css
+
+ *@Version:	    v1.0(2011-12-08)
+
+ *@Website:	    http://www.19lou.com
+
+ *@Author:      hs
+
+ *@Update:      
+
+ */
+
+
+
+/*=S ×¢²á²½Öè*/ 
+
+.welcome-top h3,.welcome-top h3 strong,.welcome-detail a.add-info-btn,.welcome-detail .newer-list li .new-note,.register-activation p.activation-logo{background:transparent url(images/bg_register.png) no-repeat;}
+
+.register-hd h3,.register-hd a,.register-hd span,.register-activation-btn a,.register-activation-btn span,.register-activation-btn font,.register-form dd .tip,.register-form dd .true{background:url(images/btn_register.png) no-repeat;}
+
+
+
+	/*=S ×¢²á frame*/
+
+    .wrap{padding-top:75px;padding-bottom: 75px;}
+
+	.register-mod{position:relative;margin:auto;padding:40px 0;width:980px;background-color: #fff;border-radius: 5px;overflow: hidden;_zoom:1;}
+
+    .register-mod .register-hd,.register-mod .register-bd,.register-mod .register-teb{margin:0 auto;width:818px;}
+
+	.register-mod .register-hd{margin-top:46px;height:35px;overflow:hidden;}
+
+	.register-mod .register-bd{margin-left:268px;padding-top:40px;}
+
+    .register-mod #registerMobile{padding-top:0;margin-left:60px;padding-bottom:50px;width: 893px;}
+
+        #registerMobile #mobileMod{display: none;}
+
+	/*=E ×¢²á frame*/
+
+
+
+    /*=S ÊÖ»ú×¢²á*/
+
+    #registerMobile #registerForm{float:left;padding-top: 40px;width: 552px;overflow: hidden;_zoom:1;}
+
+    #registerMobile .register-rod{float:right;padding-left:25px;width: 315px;border-left:1px solid #dcdcdc;overflow: hidden;_zoom:1;}
+
+        .register-rod h2{color: #000;font: 700 18px/30px "micorosoft yahei";}
+
+        .register-rod img{margin-top:27px;width: 310px;height: 380px;border: none;}
+
+        .register-rod p{margin-top:15px;padding-left: 35px;font:400 12px/25px "micorosoft yahei";color:#6a6a6a;background: url(images/icon_common.png) 0 -1904px no-repeat;}
+
+    /*=E ÊÖ»ú×¢²á*/
+
+
+
+	/*=S ×¢²áÍ·²¿*/
+
+    .register-mod .register-teb{overflow: hidden;_zoom:1;}
+
+        .register-teb p{float: right;display: block;padding-top:10px;font: 400 16px/30px simsun;color: #010101;}
+
+        .register-teb .teb-mod{float: left;width:400px;overflow: hidden;_zoom:1;}
+
+        .teb-mod em{font:400 22px/30px "micorosoft yahei",simhei;}
+
+        .teb-mod span,.link0 .teb-mod a{float:left;display:block;padding-top:10px;margin-right:14px;height:35px;overflow: hidden;_zoom:1;color:#414141;}
+
+        .teb-mod a:hover{font:700 22px/30px "micorosoft yahei";color:#414141;color: #0657B2;}
+
+        .teb-mod span em{border-bottom:2px solid #fe821e;padding-bottom:5px;*padding-bottom:0;}
+
+        .teb-mod .step{padding-right:63px;background: url(images/bg_fast_register.png) 95px -180px;}
+
+	/*=S ×¢²áÍ·²¿*/
+
+
+
+	/*=S ×¢²áÍ·²¿*/
+
+	.register-hd h2{padding-left:20px;font:500 16px/26px "microsoft yahei";color:#8ca226;}
+
+	.register-hd h3{float:left;display:block;margin:-1px 0 0 15px;padding-left:8px;_width:120px;height:32px;text-align:center;border-bottom:1px solid #e6e6e6;background-position:0px -255px;overflow:hidden;}
+
+	.register-hd h3.select{margin-top:0;;border:none;background-position:0px -190px;}
+
+		.register-hd a,.register-hd a:visited,.register-hd a:hover{cursor:pointer;display:block;margin:0;padding:0 16px 0 0;height:32px;color:#666;font:400 16px/32px "microsoft yahei";text-decoration:none;background-position:right -289px;}
+
+		.register-hd h3.select a,.register-hd h3.select a:visited,.register-hd h3.select a:hover{background-color:#fff;background-position:right -222px;}
+
+		.register-hd span{display:inline-block;width:20px;height:30px;padding-right:10px;}
+
+			.register-hd h3.select .phone span{background-position:0px -222px;}
+
+			.register-hd .phone span{background-position:-3px -289px;}
+
+			.register-hd h3.select .email span{background-position:-33px -222px;}
+
+			.register-hd  .email span{background-position:-33px -289px;}
+
+
+
+                .change-pwd h3{padding:0;margin: 0 75px 0 0;background: none;border: none;}
+
+                    .change-pwd h3.select{border-bottom: 2px solid #fe821e;}
+
+                    .change-pwd a,.change-pwd a:visited{font:400 22px/30px "micorosoft yahei","ºÚÌå";color:#414141;padding:0;background: none;}
+
+                        .change-pwd a:hover{font:400 22px/30px "micorosoft yahei","ºÚÌå";color:#414141;background: none;padding:0;}
+
+                        .change-pwd a span{padding:0;width:0;height:0;background: none;}
+
+
+
+	.register-hd h4 {margin-top:15px;width:538px;height:23px;overflow:hidden;}
+
+
+
+		.register-hd h4.second{background-position:0px -28px;}
+
+		.register-hd h4.third{background-position:0px -56px;}
+
+		.register-hd h4 strong ,.register-hd h4 span {float:left;width:168px;font:14px/24px "Simsun";text-align:center;}
+
+		.register-hd h4 strong {font-weight:bold;}
+
+	/*=E ×¢²áÍ·²¿*/
+
+
+
+	/*=S ×¢²áÄÚÈÝ*/
+
+	.register-bd{overflow:hidden;}
+
+		.register-prompt{margin: 10px 35px;}
+
+		.register-bd .register-bd-bottom{font-size: 14px;}
+
+		/*=S ×¢²áÐÅÏ¢ ±íµ¥*/
+
+			.register-form {position:relative;padding-bottom:50px;}
+
+			.register-activation-form{margin:0 85px;padding:30px 0 0;}
+
+
+
+				.register-form dl {padding:13px 0;width:615px;height:32px;border-width:1px;border-style:solid;z-index:1;}
+
+                    #registerMobile dl{width:550px;}
+
+                    .register-form #cap{width: 617px;}
+
+                    .register-form #cap dd{width: 330px;}
+
+                 .register-form dl.select {border-width:1px;border-style:solid;}
+
+				.register-form dt , .register-form dd {float:left;}
+
+					.register-form dt {float:left;width:70px;font:13px/30px "Simsun";color:#101010;text-align: right;margin-right:5px;}
+
+                    #registerMobile dt{width: 90px;}
+
+					.register-form dt em {margin-right:5px;}
+
+					.register-form dd{width: 530px;}
+
+					#registerMobile dd{width: 410px;}
+
+					.register-form dd#pwd_dl{position:relative;_zoom:1;}
+
+						.register-activation-hd dd{font:400 14px/28px Simsun;}
+
+						.register-form .option-btn span{font-weight:400;}
+
+						.register-form .othername{display:none;clear:both;float:left;margin-top:5px;padding:0 5px;line-height:24px;border:1px solid #7DBDE2;}
+
+							.register-form .othername em{color: #7DBDE2;}
+
+						.register-form dd .txt,.register-form dd #newPhoneCode {float:left;text-align:left;width:234px;height:22px;line-height:22px;font-size:14px;padding: 3px;outline: none;color: #333;border: 1px solid #ddd;border-radius: 3px;}
+
+                            .register-form dd #newPhoneCode{width:122px;}
+
+                            .register-form #cup img{float: left;}
+
+                            .register-form .optionBtn,.register-form .optionBtn:visited{display: block;float: left;margin-left:5px;width: 107px;height: 30px;font:400 12px/30px simsun;text-align:center;border-radius:3px;color:#fff;background-color: #bdc504;}
+
+                            .register-form .optionBtn:hover{color:#fff;text-decoration: none;}
+
+                            .register-form .disabled-big {background:#ccc;color:#333;}
+
+						.register-form dd input-placeholder {font-size:12px;}
+
+						.register-form dd input:-moz-placeholder {font-size:12px;}
+
+                        .register-form dd input::-webkit-input-placeholder {font-size:12px;}
+
+                        .register-form dd .pwdPlaceholder {font-size:12px;color: #999;}
+
+                        .register-form dd .namePlaceholder {font-size:12px;color: #999;}
+
+                        .register-form dd .capture {width: 60px;}
+
+                        .register-form dd .emailPlaceholder {font-size:12px;color: #999;}
+
+                        .register-form dd .mobilePlaceholder {font-size:12px;color: #999;}
+
+                        .register-form dd .newPhoneCodePlaceholder {float:left;text-align:left;width:122px;height:22px;line-height:22px;padding: 3px;outline: none;color: #999;border: 1px solid #ddd;border-radius: 3px;font-size:12px;}
+
+						.register-form dd .info {float:left;display:none;line-height:18px;}
+
+                        .register-form .mobile-dd {position:relative;}
+
+                        .register-form dd .time_tip {position:absolute;top:33px;right:182px;line-height:14px;background:none;text-align: right;}
+
+                            .change-pwd-from dd .time_tip{top: 197px;right: 385px;}
+
+							.register-form dd .tip {display:none;float:left;line-height:18px;padding:6px 0 3px 20px;width:220px;color:#FB6C03;background-position:-198px -327px;}
+
+                                #registerMobile dd .tip{float: none;background-position:-198px -330px;}
+
+							.register-form dl.select .info {display:inline;width:205px;}
+
+							.register-form dl.select .option-btn{display:none;}
+
+							.register-form dl.select .double{display:block;}
+
+							.register-form .reg-email-help{display:none;position:absolute;top:30px;left:86px;border:none;z-index:105;}
+
+							    #registerEmail .register-form .reg-email-help{left:76px;*left: 1px;}
+
+								.reg-email-help dd{border:1px solid #ddd;width:185px;background:#fff;overflow:hidden;}
+
+								.reg-email-help p{cursor:pointer;margin:0;padding-left:5px;width:185px;background:#fff;}
+
+								.reg-email-help p.hover{background:#8DC5E6;}
+
+							.register-form dl.select-user dd{height:90px;overflow-x:hidden;overflow-y:auto;}
+
+								.register-form dl.select-user p{font:400 12px/24px Simsun;}
+
+										.select-user p input{height:24px;vertical-align:top;}
+
+										.select-user p span{display:inline-block;margin:0 5px;width:95px;overflow:hidden;}
+
+						.register-form dd .double {line-height:14px;}
+
+						.register-form dl.agree {padding-bottom:10px;height:20px;font-size:14px;}
+
+						.register-form dl.prompt {padding:0 10px;height:20px;}
+
+                        #protocolWin{width:525px;}
+
+                        #protocolWin .win-btn{text-align: left;}
+
+                        #protocolWin .win-btn a{margin-left:10px;}
+
+                            #protocolWin #agreeTextarea {height:auto;}
+
+                                #protocolWin #agreeTextarea p{display:block;height:380px;overflow-y:scroll;}
+
+                        #captureWin{width: 620px;}
+
+                            #captureWin dl{width: 585px;height: 45px;font: 14px/35px "micorosoft yahei","heiti";}
+
+                            #captureWin dl #changeCapture,#captureWin dl #changeCapture:visited {color:#0657B2;} /* À¶É« -> ³ÈÉ« */
+
+                                #captureWin dl #changeCapture:hover {color:#FC6D02;}
+
+                            #captureWin dl dt{float: left;margin-right:10px;}
+
+                            #captureWin dl dd{position:relative;float: left;}
+
+                            #captureWin dl dd #changeCapture{font-size: 12px;}
+
+                            #captureWin dl dd .tip {position:absolute;top:25px;left:0;line-height:18px;padding:6px 0 3px 20px;width:220px;font-size:12px;color:#FB6C03;background:url(images/btn_register.png) no-repeat -198px -327px;}
+
+
+
+                        .register-form dl.register-popo {padding: 0 10px;height:51px;border-bottom:none;}
+
+                        .register-form dl.register-popo span {display: block;padding:3px 5px;width:124px;height:45px;color:#666;background:url(images/bg_register.png) -566px -407px no-repeat;overflow: hidden;}
+
+                        .register-form dl.register-btns {padding-top:0;border-top:none;}
+
+                        .register-form .border-btm ,.register-activation .border-btm{padding-bottom:15px;border-bottom:1px solid #ddd;}
+
+						.register-activation-form .border-btm{border:none;}
+
+						a.account-qq, a.account-sina,a.account-taobao,a.account-qihoo{display:inline-block;*display:inline;zoom:1;vertical-align:middle;margin-left:5px;padding-top:20px;width:20px;height:0;background:url(images/common.png) 0 0 no-repeat;overflow:hidden;}
+
+						a.account-sina{background-position:-20px 0;}
+
+                        a.account-taobao{background-position:-40px 0;}
+
+                        a.account-qihoo{background-position:-60px 0;}
+
+				/*maxphone*/
+
+				#maxphone{display:none;position:absolute;top:30px;left:86px;border:none;z-index:2;}
+
+					#maxphone dd{padding-left:10px;font:400 20px/34px Arial, Helvetica, sans-serif;color:#FC6D02;border:1px solid #EDDDAC;width:180px;background:#FFFCE9;overflow:hidden;}
+
+				.register-activation-form #maxphone{top:105px;left:0px;}
+
+				.change-pwd-from #maxphone{top:120px;left:1px;}
+
+				/* name_length*/
+
+				#namelength{display:none;}
+
+					#namelength{font:400 12px/26px Simsun;color:#fc6d02;}
+
+					#namelength dd{height:26px;border:1px solid #7DBDE2;overflow:hidden;}
+
+					#namelength dd input{margin:0 3px;height:26px;vertical-align:top;}
+
+					#namelength p{float:left;display:block;padding-left:3px;width:60px;height:26px;color:#666;overflow:hidden;}
+
+					#namelength p.radio{display:block;width:320px;height:26px;color:#333;overflow:hidden;}
+
+                    #namelength p.radio span, #namelength p.radio input {float:left;}
+
+		/*=E ×¢²áÐÅÏ¢ ±íµ¥*/
+
+		/*=S ÊÖ»ú×¢²á ±íµ¥*/
+
+			.input-dl{ position: relative; z-index: 101;}
+
+            .register-form .input-dl-yx{z-index: 103;}
+
+			.input-dl .tuijie-name{position: absolute;padding:5px 10px;width:220px;top:43px;left:95px;background:#fff;border-style:solid;border-color:#b7d06a; border-width:0 1px 1px 1px;z-index: 102;}
+
+				.input-dl-yx .tuijie-name{left:75px;}
+
+                .tuijie-name p{color:#b7d06a;}
+
+				.tuijie-name a,.tuijie-name a:visited{ display: block; float:left; width:110px; line-height: 23px; color:#999;}
+
+				.tuijie-name a:hover{color:#0657b2;}
+
+		/*=E ÊÖ»ú×¢²á ±íµ¥*/
+
+
+
+	/*=S ×¢²áÄÚÈÝ*/
+
+
+
+	/*=S ÊÖ»ú×¢²á¸¡²ã*/
+
+	.register-position{position:absolute;top:96px;right:0;width:175px;overflow:hidden;}
+
+		.position-hd{height:20px;text-align:right;background:url(images/btn_register.png) 1px -385px no-repeat;}
+
+			.position-hd a,.position-hd a:visited,.position-hd a:hover{padding:10px 10px 0 0;font:400 12px/24px Simsun;color:#888;text-decoration:none;}
+
+		.position-bd{background:url(images/bg_register_about.png) repeat-y;}
+
+			.position-bd h3{margin-left:15px;padding:0 0 5px 5px;width:145px;font:700 14px/24px Simsun;color:#334f67;border-bottom:1px dashed #ddd;}
+
+			.position-bd li{padding-left:20px;width:145px;font:400 12px/30px Simsun;color:#334f67;background:url(images/btn_register.png) -200px -373px no-repeat;}
+
+		.position-foot{height:20px;background:url(images/btn_register.png) 1px -400px no-repeat;}
+
+	/*=E ÊÖ»ú×¢²á¸¡²ã*/
+
+/*=E ×¢²á²½Öè*/
+
+
+
+/*=S ×¢²á°´Å¥*/
+
+/*.register-btn,.register-btn span,.register-btn:hover,.register-btn:hover span{display:inline-block;padding-left:8px;height:31px;text-decoration:none;vertical-align:middle;overflow:hidden;background-position:0 -1080px;}*/
+
+		/*.register-btn:hover{background-position:0 -1240px;}*/
+
+			/*.register-btn span{float:left;padding-right:16px;height:31px;font:400 14px/31px "microsoft yahei";color:#fff;text-align:center;vertical-align:middle;background-position:right -1120px;}*/
+
+			/*.register-btn:hover span{background-position:right -1280px;}*/
+
+/*.register-btn1,.register-btn1 span,.register-btn1:hover,.register-btn1:hover span{_height:32px;background-position:0 -1320px;}*/
+
+		/*.register-btn1:hover{background-position:0 -1080px;}*/
+
+			/*.register-btn1 span{float:left;padding-right:16px;_height:32px;font:400 14px/31px "microsoft yahei";color:#91a727;text-align:center;background-position:right -1360px;}*/
+
+			/*.register-btn1:hover span{background-position:right -1120px;color:#fff;}*/
+
+			/*.register-btn span i{display:inline-block;float:left;height:31px;_height:32px;width:15px;background:url(images/bg_register.png) no-repeat 0 -403px;}*/
+
+			/*.register-btn1 span i{width:20px;background-position: -40px -403px;}*/
+
+			/*.register-btn1:hover span i{width:20px;background-position: -20px -403px;}*/
+
+.register-btns{margin-left: 79px;}
+
+    #registerEmail .register-btns{margin-left: 76px;}
+
+    .register-btns .register-btn,.register-btns .register-btn:visited{display:block;width: 242px;height: 50px;overflow: hidden;_zoom:1;border-radius:3px;font:400 22px/50px "micorosoft yahei","ºÚÌå";text-align: center;background: #ccc;color:#333;border:1px solid #ddd;}
+
+    .register-btns .register-btn:hover{color: #333;text-decoration: none;cursor:default;}
+
+    .register-btns .Register_btn {background: #bdc504;color: #fff;border:none;}
+
+    .register-btns .Register_btn:hover{color: #fff;text-decoration: none;cursor:pointer;}
+
+
+
+/*=E ×¢²á°´Å¥*/
+
+
+
+
+
+
+
+/*=S ×¢²á¼¤»î*/
+
+        .register-activation .register-activation-hd{position:absolute;top:36px;left:35px;padding-top:100px;width:118px;height:30px;background:url(images/bg_register_mail.png) no-repeat 0 10px;font:700 18px/30px Simsun;color:#8ea227;text-align:center;vertical-align:middle;}
+
+        .register-activation-phone .register-activation-hd{background-position:0 -435px;}
+
+			.register-activation-hd span{padding:0 10px;color:#8ea227;}
+
+		.register-activation-bd{position:relative;padding:40px 0 0 150px;background:url(images/bg_register_mail.png) no-repeat 0 10px;}
+
+		.register-activation-bottom{margin: 120px 0;padding:10px 20px;width: 550px;height: 35px;border-top:1px solid #ddd;}
+
+            .register-activation-bottom h5{padding-left: 25px;background: url(images/bg_fast_register.png) 0 -300px;font:400 18px/25px "micorosoft yahei";color:#bdc504;}
+
+            .register-activation-bottom p{font:400 14px/24px "micorosoft yahei";}
+
+            #email {width:234px;height: 22px;font:400 12px/22px simsun;}
+
+            #changeEmail{width:320px;height: 22px;font:400 12px/22px simsun;}
+
+            .emailChangeBtn,.emailChangeBtn:visited,.captureBtn,.captureBtn:visited{display: inline-block;margin-left:10px;width: 80px;height: 27px;text-align:center;font:12px/27px "micorosoft yahei";color: #fff;background: url(images/bg_fast_register.png) 0 -350px;;border-radius: 5px;}
+
+            .emailChangeBtn:hover,.captureBtn:hover{color: #fff;text-decoration: none;}
+
+            .regMail{margin: 20px 0;}
+
+			.register-activation-bd h3{color: #414141;font:700 24px/30px "micorosoft yahei","ºÚÌå";}
+
+			.register-activation-bd p{font:400 14px/30px simsun;padding:10px 0;color:#414141;}
+
+			.register-activation-bd p i{color: #f10808;}
+
+                .register-activation-bd p.reg .tip{display:none;float:left;margin:3px 0 0 70px;_margin-left:35px;padding-left:20px;width:140px;height:16px;font: 400 12px/16px simsun;color: #8ca226;background: url(images/icon.png) 0 -3756px no-repeat;overflow: hidden;_zoom:1;}
+
+                    .register-activation-bd p.reg .word_tip{width:132px;height:24px;margin-right:57px;font-size: 12px;overflow: hidden;_zoom:1;}
+
+
+
+                .register-activation-bd .register-activation-email p.reg .tip{margin-left:40px;}
+
+                .register-activation-bd p.reg .wrong{color: #fb6c03;background-position:0 -3720px;}
+
+					.register-activation-email #email{color:#FF6101;}
+
+					.register-activation-email p{color:#333;}
+
+					.register-activation-email .c-email{padding-top:10px;font:400 12px/24px simsun;color:#666;}
+
+					.register-activation-email .txt,.register-activation-phone .txt{width:145px;height:22px;line-height:22px;}
+
+
+
+					.register-activation-phone .option-btn span{font-weight:400;}
+
+					.register-activation-bd .maxphone{display:none;position:absolute;top:82px;_top:80px;left:220px;_left:70px;margin:0;padding:0 0 0 10px;width:145px;font:400 20px/34px Arial, Helvetica, sans-serif;color:#FC6D02;border:1px solid #EDDDAC;background:#FFFCE9;overflow:hidden;z-index:2;}
+
+					.activation-phone-sp{display:inline-block;width:70px;text-align:right;}
+
+
+
+				.link0 .register-activation-btn,.link0 .register-activation-btn:visited{display:block;margin-top:50px;width:245px;height:50px;font:400 22px/50px "microsoft yahei";border-radius:5px;color:#fff;background-color:#bdc504;text-align:center;text-decoration:none;}
+
+                .link0 .register-activation-btn:hover{color:#fff;text-decoration: none;}
+
+
+
+/*=E ×¢²á¼¤»î*/
+
+
+
+/*=S ×¢²á³É¹¦*/
+
+.register-success{}
+
+    .register-success .register-hd{margin-top: 34px;}
+
+    .register-success .register-bd{margin:0 auto;padding-top:70px;width:660px;overflow:hidden;}
+
+        .register-success .success-hd,.register-success .success-bd{margin-left:110px;padding-left:105px;width:430px;overflow:hidden;}
+
+        .register-success .success-hd{background:url(images/bg_register_success.png) no-repeat 0 0;}
+
+            .success-hd dt{font:400 24px/100px "microsoft yahei";color:#414141;}
+
+            .success-bd p{margin-bottom:10px;font:400 14px/28px Simsun;color:#666;}
+
+            .success-hd p{font:400 14px/28px Simsun;color:#666;}
+
+            .success-hd #successBtn,.success-hd #successBtn:visited{display: block;padding-left:30px;width: 195px;height: 50px;background: url("images/bg_fast_register.png") 0 -230px no-repeat;font: 400 22px/50px "micorosoft yahei","ºÚÌå";color: #fff;}
+
+                .success-hd #successBtn:hover{color:#fff;text-decoration: none;}
+
+            .success-bd a{float:left;display:block;margin-right:20px;width:120px;height:120px;text-align:center;font:400 12px/20px Simsun;color:#666;}
+
+                .success-bd img{display:block;margin:0 auto;border:none;}
+
+            .register-success .register-bd-bottom{margin-top:175px;padding-left: 168px;}
+
+            .browse, .browse:visited{color:#0657b2;}
+
+            .browse:hover{color:#0657b2;}
+
+
+
+            .pwd-edit-suc{margin-bottom:200px;}
+
+                .pwd-edit-suc dd{height:36px;line-height:36px;}
+
+                .pwd-edit-tip{text-indent:40px;background:url(images/icon_suc.png) no-repeat;}
+
+/*=E ×¢²á³É¹¦*/
+
+
+
+
+
+/*=S »¶Ó­½çÃæÍ·²¿*/
+
+.welcome-top{padding-left:20px;}
+
+.welcome-top h3{float:left;padding-left:20px;height:42px;background-position:-398px -120px;}
+
+.welcome-top h3 strong{float:left;padding-right:15px;height:36px;color:#fff;font:700 20px/36px "Microsoft Yahei";background-position:right -120px;}
+
+.welcome-top p{clear:both;padding:18px 0 10px 40px;}
+
+/*=E »¶Ó­½çÃæÍ·²¿*/
+
+
+
+
+
+/*=S »¶Ó­½çÃæ ÍêÉÆ×ÊÁÏ*/
+
+.welcome-detail{margin-left:162px;padding-top:22px;width:640px;border-top:1px solid #ddd;overflow:hidden;}
+
+    .welcome-detail .detail-info{position:relative;float:left;margin-right:10px;width:380px;font-size:14px;}
+
+    .welcome-detail .detail-info h4{padding:0 0 30px 105px;font-size:20px;line-height:20px;}
+
+    .welcome-detail .detail-info p{margin-bottom:20px;}
+
+    .welcome-detail .detail-info p select{margin-left:5px;}
+
+    .welcome-detail p.add-info{display:none;}
+
+    .welcome-detail a.add-info-btn{display:block;margin-top:8px;padding-left:10px;height:25px;line-height:25px;font-size:12px;outline:medium none;background-position:0 -122px;}
+
+    .welcome-detail .newer-list{float:left;padding:0 0 12px 8px ;width:230px;border-left:1px solid #ddd;overflow:hidden;}
+
+            .welcome-detail .newer-list h4{padding:0px 0 20px 20px;font-size:20px;line-height:20px;}
+
+            .welcome-detail .newer-list div.list{position:relative;height:241px;overflow:hidden;zoom:1;}
+
+                .newer-list .list ul{height:9999px;}
+
+
+
+    .welcome-detail .newer-list li{position:relative;padding:10px 0;margin-left:26px;width:205px;height:auto;line-height:20px;border-bottom:1px dashed #ddd;}
+
+    .welcome-detail .newer-list li .new-note{position:absolute;top:12px;left:-26px;padding-top:20px;width:20px;height:0px;background-position:-535px -98px;overflow:hidden;}
+
+    .welcome-detail .detail-btn{padding-top:35px;clear:both;}
+
+    .welcome-detail .detail-btn label{margin-right:60px;vertical-align:middle;}
+
+    .welcome-detail input.short-txt {width: 80px;}
+
+    .welcome-detail input.long-txt {width: 306px;}
+
+    .welcome-detail .three-word {width: 66px;}
+
+    .welcome-detail .four-word {width: 80px;}
+
+/*=E »¶Ó­½çÃæ ÍêÉÆ×ÊÁÏ*/
+
+
+
+/*=S ×Ô¶¯ÌîÐ´ */
+
+.auto-list{position:absolute;display:none;width:118px;height:150px;border:1px solid;border-top:0 none;overflow-y:auto;overflow-x:hidden;_overflow:scroll;z-index:2;}
+
+.auto-list a{display:block;padding:2px;height:20px;line-height:20px;}
+
+.auto-list a:hover{text-decoration:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=S »¶Ó­½çÃæ frame*/
+
+.wrap{background:url("images/bg_register_new.png") top center;}
+
+.register-mod .welcome-hd{padding:0 120px;width:740px;}
+
+.register-mod .welcome-bd{margin:auto;padding:0;width:980px;}
+
+/*=E »¶Ó­½çÃæ frame*/
+
+
+
+
+
+
+
+/*=S color*/
+
+.register-hd h3 {color:#334F67;}
+
+.register-hd h4 strong , .register-hd h4 span {color:#666;}
+
+.register-hd h4 strong {color:#FFF;}
+
+	/* register-form */
+
+	.register-form dl {border-color:#FFF;}
+
+		.register-form dt {color:#F32D2D;}
+
+		.register-form dt em {color:#333;}
+
+		 .register-form dd .info {color:#666;}
+
+
+
+/* reg_content */
+
+        .register-form dd .true {padding-left:18px;width:180px;color:#8CA226;background-position:0px -328px;}
+
+        #registerMobile dd .true{background-position:0px -330px;}
+
+		/* pwd_strength */
+
+        #pwd_strength {display:none;line-height:20px;overflow:hidden;_zoom:1;}
+
+        #pwd_dl #pwd_strength {position:absolute;top:-10px;right:0;padding:0;width:265px;_width:240px;height:40px;}
+
+            #pwd_dl #pwd_strength.pwd_mobile {top:30px;left:-5px;right:0}
+
+        /*#pwd_strength dt{width:10px;}*/
+
+            #pwd_strength dd{width:255px;}
+
+                #pwd_strength dd#strength_tip{width:255px;height:20px;overflow:hidden;_zoom:1;}
+
+            #pwd_strength div {float:left;margin:8px 10px 0 0;width:132px;height:4px;background-color:#E5E9EB;overflow:hidden;}
+
+            #pwd_strength P {height:4px;}
+
+                #strength_1 p {width:33%;background-color:#F32D2D;}
+
+                #strength_1 .strength_tip {color:#F32D2D;}
+
+                #strength_2 p {width:66%;background-color:#FF9801;}
+
+                #strength_2 .strength_tip {color:#FF9801;}
+
+                #strength_3 p {width:100%;background-color:#8CA226;}
+
+                #strength_3 .strength_tip {color:#8CA226;}
+
+
+    .auto-list{border-color: #b5ce85;background:#fff;}
+
+    .auto-list a:hover{background:#b5ce85;}
+
+/*=E color*/
+
+
+
+/*=S invite */
+
+.register-mod .invite-bd{height:auto!important;padding:50px 190px 100px;width:600px;height:350px;min-height:350px;}
+
+.invite-no-news{padding-top:130px;}
+
+	.invite-suc-info{width:250px;}
+
+	.invite-suc-btn{padding-right:30px;}
+
+	.invite-friend-list{margin-top:30px;line-height:24px;}
+
+	.invite-friend-list li{position:relative;padding-left:65px;margin-bottom:20px;width:490px;}
+
+	.invite-friend-list h4{font-weight:400;}
+
+	.invite-friend-list h4 img{position:absolute;left:0;top:5px;border-radius:5px;}
+
+	.invite-friend-list .feed-back{height:30px;line-height:30px;clear:both;}
+
+	.invite-friend-list p a img{display:block;float:left;margin:5px 5px 0 0;padding:2px;border:1px solid #e8e8e8;}
+
+	.invite-friend-list .feed-image-count{margin-top:63px;}
+
+/*=E invite */
+
+
+
+/*=S 19Â¥ÊÐÃñ°ó¶¨ */
+
+.register-mod.regrz {background:url(images/honour_bg.png) no-repeat;}
+
+.regrz .register-activation {padding-top:10px;}
+
+.register-mod .apply-hd{margin: 0 180px 10px 180px;width: 660px;font:700 16px "Microsoft YaHei";}
+
+.register-item{margin-left:20px;}
+
+.register-item p{display:block;margin-bottom:20px;line-height:20px;}
+
+.register-item p.register-item-hd{}
+
+.register-item-hd a{font-weight:700;line-height:30px;}
+
+/*=E 19Â¥ÊÐÃñ°ó¶¨ */
+
+
+
+/*S ÐÂ×¢²á*/
+
+.register-step{width:818px;height:35px;background:url(images/bg_fast_register.png) no-repeat 0 0;}
+
+.register-step2{background-position:0 -50px;}
+
+.register-step3{background-position:0 -100px;}
+
+
+
+.register-step span{float:left;padding:0;width:272px;height:35px;font:700 16px/35px simsun;text-align:center;color: #9e9f8c;background: none;}
+
+.register-step span.underway{color: #fff;}
+
+
+
+.register-mod .stage{padding:0;text-align: left;}
+
+.register-mod .stage dl{position:relative;padding:0;width:245px;z-index: 2;}
+
+    .register-mod .stage dl .stageName{color:#333;font-size:14px;}
+
+        .register-mod .stage dl dt .choose{text-align:left;color:#999;font-size:12px;}
+
+        .register-mod .stage dl dt .icon {position:absolute;top:7px;right:10px;_right:12px;width:16px;height:16px;background:url(images/bg_register.png) no-repeat 0 -300px;}
+
+        .register-mod .stage dl dt .iconbottom {background-position:-20px -300px;}
+
+    .register-mod .stage dl dd{display:none;position:absolute;top:30px;left:0;width:240px;border:1px solid #d8d8d8;background:#fff;border-top:none;z-index: 2;}
+
+        .register-mod .stage dl dd a{display:block;padding:2px 5px;width:230px;line-height:22px;font:400 12px/18px simsun;color: #333;overflow:hidden;}
+
+            .register-mod .stage dl dd a:hover{background:#9fcadc;text-decoration:none;}
+
+
+
+            .register-activation-email .reg-email-help {display: none;position: absolute;top: 81px;_top: 80px;left: 192px;_left: 42px;border: none;z-index: 2;}
+
+                .register-activation-email .reg-email-help p{cursor:pointer;margin:0;padding:0 0 0 5px;width:185px;height:18px;font: 400 12px/18px Simsun;background:#fff;}
+
+                .register-activation-email .reg-email-help p.hover{background:#8DC5E6;}
+
+                .register-activation-email .txt{width:179px;}
+
+
+
+
+
+    /*Î´¼¤»îÓÃ»§ÌáÊ¾¼¤»î*/
+
+    .activation1{padding:92px 124px;}
+
+        .register-activation .activation-hd1{font:700 16px/24px "Microsoft YaHei";color:#666;}
+
+            .register-activation .activation-hd1 span{color:#8a9f22;}
+
+        .activation-bd1{padding:0 40px;font-size: 12px;}
+
+            /*.register-form .checkbox{margin:0;padding:0; background-color:Yellow;border:1px groove #111;}*/
+
+/*×¢²áÐ­Òé*/
+
+
+
+.register-mod .popo-mod{position: relative;}
+
+.change-pwd-from{height:400px;margin: 0;}
+
+    .change-pwd-from .register-btn,.change-pwd-from .register-btn:visited{display:block;float:left;width:245px;height:50px;color:#fff;font:400 22px/50px "micorosoft yahei","ºÚÌå";text-align: center;border-radius: 3px;color: #fff;background-color: #bdc504;}
+
+        .change-pwd-from .register-btn:hover{color: #fff;text-decoration: none;}
+
+.change-pwd-from dl{width:617px;}
+
+.change-pwd-from dt{width: 80px;}
+
+.change-pwd-from dd{line-height: 30px;}
+
+.change-pwd-from #phone-btn,.change-pwd-from #phone-btn:visited{display:block;float:left;margin-left:10px;padding-left:0;width: 107px;height: 30px;color:#fff;font: 400 12px/30px simsun;text-align: center;border-radius: 3px;color: #fff;background: #bdc504;}
+
+    .change-pwd-from #phone-btn:hover{color: #fff;text-decoration: none;}
+
+    .change-pwd-from #phone-btn span{padding:0;margin:0;float:none;background: none;color: #fff;font-size: 12px;}
+
+
+
+/*E ÐÂ×¢²á*/
+
+
+
+.footer{margin-top: 0;}
+
+/*¶à¸öÕÊºÅÕÒ»ØÃÜÂë 20150730*/
+
+.moreaccount-psw{margin-left:268px;padding-top:40px}
+
+.moreaccount-psw .moreaccount-link{margin-top: 10px;}
+
+    .moreaccount-link a,.moreaccount-link a:visited{display: block;padding-left:30px;width:330px;height: 33px;background:url(images/txicon.png) 11px 11px no-repeat;line-height: 33px;border-bottom: 1px solid #eaeaea;color:#646464;}
+
+    .moreaccount-link a:hover{background-position: 11px -23px; color:#0657B2;}
+
+    .moreaccount-link a:last-child{border-bottom: none;}
+
+
+
+/*ÑéÖ¤ÂëÃÉ°æ*/
+
+.gt_holder{z-index:999999;}
+
+
+/*S=ÐÞ¸ÄÃÜÂëÒýµ¼*/
+.modify-mod{padding:50px 53px;width:874px;height:552px;}
+.modify-step{position:relative;width: 873px;height: 36px;font:400 14px/36px "micorosoft yahei";background: url(images/modify_pwd_step.png);}
+.modify-mod-step2 .modify-step{background:url(images/modify_pwd_step.png) 0 -39px no-repeat}
+.modify-mod-step3 .modify-step{background:url(images/modify_pwd_step.png) 0 -76px no-repeat}
+
+	.modify-step ul li{float:left;width: 271px;padding-left: 20px;color: #666;}
+	.modify-step ul li.first{width: 281px;padding-left: 10px;}
+	.modify-step ul li span{display: inline-block;margin-right:10px;width: 18px;height: 18px;border-radius: 18px;font:400 14px/18px "micorosoft yahei";text-align: center;background: #999;color: #fff;vertical-align: middle-1px;}
+	.modify-step ul li.finish{color: #fff; }
+		.modify-step ul li.finish span{color: #a4bb37;background: #fff;}
+	.modify-pwd-bd .note{margin:54px auto 46px;text-align: center;font: 400 24px/30px "micorosoft yahei";color: #a4bb37;height: 30px;}
+	.modify-pwd-bd .note i{display: inline-block;margin-right:9px;width: 30px;height: 30px;background: url(images/modify_pwd_icon.png) 0 -35px;vertical-align: -7px;}
+	.modify-pwd-bd .back-home{position: absolute;left:0;bottom:30px;width: 100%;text-align: center;font:400 16px "micorosoft yahei";color: #666;}
+	.modify-pwd-bd .back-home a,.modify-pwd-bd .back-home a:visited{color: #428bca;margin-left: 5px;}
+	.modify-mod .register-form{margin:0 auto;width: 550px;}
+		.modify-mod .register-form dl{padding: 0;margin-bottom: 30px;border: 0;height: auto;}
+			.modify-mod .register-form dt{width: 134px;text-align: right;}
+			.modify-mod .register-form dd{width: 400px;}
+	.modify-mod .register-form dt{font:400 16px/42px "micorosoft yahei";}
+	.modify-mod .register-form dd input,.modify-mod .register-form dd #newPhoneCode{padding:0 10px;border:2px solid #e6e6e6;height: 38px;font:400 14px/42px "micorosoft yahei";}
+	.modify-mod .phoneNumber dd input{width: 276px;}
+	.modify-mod .phoneCode .mobile-dd #newPhoneCode,.modify-mod .register-form dd .newPhoneCodePlaceholder{width: 136px;height: 38px;padding:0 10px;}
+	.modify-mod input:hover, .modify-mod input:focus{box-shadow: 0 0 2px #d0d0d0;}
+	.modify-mod .register-form .optionBtn, .modify-mod .register-form .optionBtn:visited{margin-left:10px;width: 131px;height: 42px;font:400 16px/42px "micorosoft yahei";background-color: #a4bb37;}
+	.pw-confirm-btn{margin-left: 139px;}
+	.pw-confirm-btn a,.pw-confirm-btn a:visited{display:block;width: 300px;height: 44px;background: #a4bb37;font:400 16px/44px "micorosoft yahei";color: #fff;text-align: center;;}
+	.pw-confirm-btn a:hover{background: #91a628;color: #fff;text-decoration: none;}
+	.modify-mod .register-form dd .tip{padding-left:25px;padding-right:3px;margin-top:8px;width: auto;height: 24px;border: 1px solid #ebccd1;background: url(images/modify_pwd_icon.png) #f2dede no-repeat 5px 8px;font: 400 14px "micorosoft yahei";color: #b94a48;}
+	.modify-mod #pwd_strength{width: 381px;margin-left: 139px;margin-bottom: 0;}
+	.modify-mod-step3 .modify-pwd-bd .note{margin-top:130px;}
+		.modify-mod-step3 .modify-pwd-bd .note i{background-position: 0 -71px;width: 34px;height: 30px;} 
+		
+/*E=ÐÞ¸ÄÃÜÂëÒýµ¼*/
+	
+

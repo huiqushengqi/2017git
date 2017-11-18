@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.QuoteDao">
+	<resultMap type="Material" id="myid">
+	<id property="mat_id" column="mat_id"/>
+	<result property="mat_name" column="mat_name"/>
+	<result property="mat_about" column="mat_about"/>
+	<result property="mat_price" column="mat_price"/>
+	<result property="mat_cover" column="mat_cover"/>
+	<association property="mat_type" javaType="MType" select="com.etc.painter.dao.MTypeDao.queryid" column="mat_type">
+	</association>
+	</resultMap>
+	
+	<select id="queryByid" parameterType="Integer" resultMap="myid">
+	select * from t_material where mat_type=#{1}
+	</select>
+	</mapper>

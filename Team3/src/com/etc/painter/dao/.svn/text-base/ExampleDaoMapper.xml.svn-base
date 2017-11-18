@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.ExampleDao">
+	<resultMap type="Example" id="myid">
+	<id property="exp_id" column="exp_id"/>
+	<result property="exp_name" column="exp_name"/>
+	<result property="exp_content" column="exp_content"/>
+	<result property="exp_img" column="exp_img"/>
+	<result property="exp_cover" column="exp_cover"/>
+	<association property="exp_type" javaType="MyType" select="com.etc.painter.dao.MyTypeDao.querybyid" column="exp_type"></association>
+	</resultMap>
+	<select id="queryit" resultMap="myid">
+	select t.*  from t_etype s,t_examples t where s.etype_id=t.exp_type
+	</select>
+	<!-- 根据案例类型查询案例 -->
+	<select id="querybytype" resultType="Example">
+    select * from t_examples where exp_type=#{0}
+    </select>
+	<select id="query"  resultType="Example">
+      select * from t_examples 
+     </select>
+     <select id="queryname" parameterType="String" resultType="Example">
+        select * from t_examples where exp_name=#{0}
+     </select>
+     <delete id="delete" parameterType="Integer" >
+       delete from t_examples where exp_id=#{myid}
+     </delete>
+     <select id="selectid" parameterType="Integer" resultType="Example">
+       select * from t_examples where exp_id=#{0}
+      </select>
+      <update id="update" parameterType="Example">
+     update t_examples set exp_name=#{exp_name},exp_content=#{exp_content},exp_img=#{exp_img} where exp_id=#{exp_id}   
+       </update>
+	
+	</mapper>	

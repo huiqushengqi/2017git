@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.ReviewDao">
+	
+	<resultMap type="Review" id="myReview">
+	<id column="review_id" property="review_id"></id>
+	<result column="review_content" property="review_content"></result>
+	<result column="review_time" property="review_time"></result>
+	<association property="review_user" javaType="User" select="com.etc.painter.dao.UserDao.queryUserById" column="review_user"></association>
+	</resultMap>
+	
+	
+	<!-- 全表查询 -->
+	<!-- 属性名与列名不一致，解决方案，查询的时候取别名，或者用resultMap -->
+	<select id="queryReviewByEssayid" resultMap="myReview">
+	select b.* from t_essay a,t_review b where essay_id=review_essay and essay_id=#{0}
+	</select>
+
+	<insert id="addReview" parameterType="Review">
+		insert into t_review(review_content,review_essay,review_time,review_user) values(#{review_content},#{review_essay.essay_id},#{review_time},#{review_user.user_id})
+	</insert>
+	
+	<select id="ReviewNum" resultType="Integer">
+		select count(*) from t_review where review_essay=#{0}
+	</select>
+	
+	<select id="queryReviewByPage" resultMap="myReview">
+		 select s.* from(select t.*,rownum tnum from (select * from t_review where review_essay=#{2} order by review_id)t where rownum&lt;=(#{0}*#{1}))s where tnum&gt;(#{0}-1)*#{1}		
+	</select>
+	</mapper>

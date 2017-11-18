@@ -1,0 +1,56 @@
+
+.navbar .navbar-nav li .dropdown-menu li a .label {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+.navbar .navbar-nav li .dropdown-menu li a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  line-height: 40px;
+  height: 40px;
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+nav.top1.navbar.navbar-default.navbar-static-top {
+  
+  /*opacity: ;*/
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-right li{
+	display:inline-block;
+}
+.navbar .navbar-nav li .dropdown-menu li {
+  padding: 0;
+  position: relative;
+  min-width:90%;
+  border-bottom: 1px solid #e1e6ef;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  width:300px;
+}
+
+.dropdown-menu {
+  min-width: 202px !important;
+}
+.navbar .navbar-nav li .dropdown-menu li a i {
+  margin: 0 10px 0 -5px;
+  border: none;
+ color: #5bc0de;
+}
+.navbar .navbar-nav li a .badge {
+  background: #ff5454;
+  border: 2px solid white;
+  position: absolute;
+  top: 9px;
+  right: 3px;
+  font-size: 8px;
+  line-height: 8px;
+  padding: 4px 6px;
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  border-radius: 50em;
+  min-width: 0;
+}

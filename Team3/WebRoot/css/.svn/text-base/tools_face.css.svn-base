@@ -1,0 +1,28 @@
+body{ color:#2b2b2b;}
+
+.udLine,.udLine a{ text-decoration:underline}
+.cGreen a,.cGreen a:visited{color:#008000;}
+/* 频道推荐 */
+.NTES_nav_,.channel,.nav_channel,.foot,.editorSign,.nav_channel_end,.ad960{ display:none;}
+/* 布局 */
+.area{ width:100%; margin:0 auto;}
+.areabor{ border-top:1px solid #ddd;}
+.col1{ display:none;}
+.col2{width:799px; margin:0 auto;}
+.content{ margin:0 12px;}
+/* 栏目标题 */
+.dataList th,.dataList td{ padding:3px 10px 3px 12px; line-height:21px; background:#f8ffe6; border:1px solid #e2e3cd; text-align:left;}
+.dataList .til th,.dataList .til td{border-color:#cfdfa5; font-weight:bold;}
+.dataList td{ color:#727171}
+.dataList input.w100{ width:100%; margin:0 -3px;}
+.dataList .inp td{ color:#000;}
+.dataList .inp .dj,.dataList .inp .dj input{ font-weight:bold; color:#92464f}
+.dataList .no{ text-align:center;}
+.dataList .dj,.dataList .hj{ text-align:right;}
+.dataListbot{ margin-top:12px; width:100%;}
+.dataListbot .total{ float:left; font-size:14px;}
+.dataListbot .total strong{ font-weight:bold;color:#92464f}
+.tools_title_bg{ text-align:center;}
+/**隐藏**/
+#header,#top,#footer,#banner_x_f,#banner_b_f,.dataListbot .bts,.xs,.tools_menu{
+display:none;}

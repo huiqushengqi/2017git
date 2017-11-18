@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.MyTypeDao">
+	<!--  <resultMap type="MyType" id="mtid">
+	<id property="etype_id" column="etype_id"/>
+	<result property="etype_name" column="etype_name"/>	
+	
+	</resultMap>
+	<select id="queryall" parameterType="String" resultMap="mtid">
+	select * from  t_etype where etype_name=#{0}
+	</select>-->
+	<select id="querybyid" parameterType="Integer" resultType="MyType">
+	select * from  t_etype where etype_id=#{0}
+	</select>
+	<!-- 根据类型名查询类型 -->
+	<select id="queryall"  resultType="MyType">
+	select * from  t_etype where etype_name=#{0}
+	</select>
+	</mapper>	

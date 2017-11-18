@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <configuration>
+ <typeAliases>
+<typeAlias type="com.etc.painter.entity.Activities" alias="Activities"/>
+<typeAlias type="com.etc.painter.entity.Designer" alias="Designer"/>
+<typeAlias type="com.etc.painter.entity.Example" alias="Example"/>
+<typeAlias type="com.etc.painter.entity.Manager" alias="Manager"/>
+<typeAlias type="com.etc.painter.entity.Material" alias="Material"/>
+<typeAlias type="com.etc.painter.entity.MyType" alias="MyType"/>
+<typeAlias type="com.etc.painter.entity.User" alias="User"/>
+<typeAlias type="com.etc.painter.entity.MType" alias="MType"/>
+<typeAlias type="com.etc.painter.entity.Essay" alias="Essay"/>
+<typeAlias type="com.etc.painter.entity.Review" alias="Review"/>
+</typeAliases>
+ <mappers>
+ <mapper resource="com/etc/painter/dao/DesignerDaoMapper.xml"/>
+   <mapper resource="com/etc/painter/dao/ManagerDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/UserDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/QuoteDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/EssayDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/ReviewDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/MTypeDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/MaterialDaoMapper.xml"/>
+    <mapper resource="com/etc/painter/dao/ExampleDaoMapper.xml"/>
+ </mappers>
+ </configuration>

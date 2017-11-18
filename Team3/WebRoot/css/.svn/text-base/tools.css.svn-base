@@ -1,0 +1,11 @@
+body { margin: 0; font-size: 12px; font-family: Arial,"ËÎÌו",sans-serif; background: #fff; }
+ul, ol, li { margin: 0; padding: 0; list-style: none; }
+.ul li { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+a { color: #000; text-decoration: none; }
+a:hover {text-decoration: underline; }
+.hlink { display: block; height: 100%; overflow: hidden; text-indent: -9999px; }
+#content { width: 970px; margin: 0 auto; clear: both; overflow: hidden; }
+#content { padding-top: 0px; overflow: visible; }
+#content .list_left { background: #FFFFFF; border-radius: 5px 5px 5px 5px; }
+#content .xc_dan_l { background: #FFFFFF; border-radius: 5px 5px 5px 5px; }
+#content .xc_dan_r { background: #FFFFFF; border-radius: 5px 5px 5px 5px; }

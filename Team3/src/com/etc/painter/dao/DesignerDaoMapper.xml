@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.DesignerDao">
+	<select id="queryBytitle" parameterType="String" resultType="Designer">
+	select * from t_designer where der_title=#{0}
+	 <!-- 数据库分页mybatis三个问题 -->
+	</select>
+	<select id="queryCount" parameterType="String" resultType="Integer" >
+     select count(*)  from t_designer  where der_title=#{der_title}
+     <!-- 两个问题 查询总数 count 返回的是一张表，因此返回一个list -->
+	</select>
+	<select id="queryAll"   resultType="Designer">
+	 select * from (select t.*,rownum r from (select * from t_designer order by der_id) t
+	  where rownum&lt;=#{0}*#{1}) a
+	  where r&gt;(#{0}-1)*#{1}
+	 </select>
+	 <select id="queryCount1" resultType="Integer">
+	 select count(*) from t_designer
+	 </select>
+	 <delete id="deletebyid" parameterType="Integer">
+	 delete from t_designer where der_id=#{id}
+	 </delete>
+	 <insert id="adddesigner" parameterType="Designer">
+	  insert into t_designer(der_id,der_name,der_title,der_about,der_work,der_img,der_phone,der_date) values(seq_designer.nextval,#{der_name},#{der_title},#{der_about},#{der_work},#{der_img},#{der_phone},#{der_date})
+	 </insert>
+	 <select id="querybyid" parameterType="Integer" resultType="Designer">
+	 select * from t_designer where der_id=#{id}
+	 </select>
+	 <update id="updatebyid" parameterType="Designer">
+	 update t_designer set der_name=#{der_name},der_title=#{der_title},der_phone=#{der_phone},der_work=#{der_work},der_about=#{der_about},der_img=#{der_img}
+	 where der_id=#{der_id}
+	 </update>
+	</mapper>

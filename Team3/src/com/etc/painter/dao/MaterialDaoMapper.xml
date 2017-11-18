@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.etc.painter.dao.MaterialDao">
+	<resultMap type="material" id="mymaterial">
+	<id column="mat_id" property="mat_id"></id>
+	<result column="mat_name" property="mat_name"/>
+	<result column="mat_about" property="mat_about"/>
+	<result column="mat_price" property="mat_price"/>
+	<result column="mat_cover" property="mat_cover"/>
+	<association property="mat_type" column="mat_type" javaType="MType" select="com.etc.painter.dao.MTypeDao.queryid">
+	</association>
+	</resultMap>
+	<!-- 查询材料 -->	
+	<select id="queryall" resultMap="mymaterial">
+	select a.*,b.* from t_material a,t_mtype b where mat_type=mtype_id
+	</select>
+	<!-- 根据id查材料 -->
+	<select id="querybyid" parameterType="Integer" resultMap="mymaterial">
+	select a.*,b.* from t_material a,t_mtype b where mat_id=#{mat_id} and mat_type=mtype_id
+	</select>
+	<!-- 添加材料 -->	
+	<insert id="addAll" parameterType="Material">
+	insert into t_material(mat_name,mat_about,mat_price,mat_cover,mat_type) values(#{mat_name},#{mat_about},#{mat_price},#{mat_cover},#{mat_type.mtype_id})
+	</insert>
+	<!-- 删除材料 -->
+	<delete id="deletebyid" parameterType="Integer">
+	delete from t_material where mat_id=#{mat_id}
+	</delete>
+	<!-- 修改材料 -->	
+	<update id="editbyid" >
+	update t_material set mat_name=#{mat_name},mat_about=#{mat_about},mat_price=#{mat_price},mat_cover=#{mat_cover},mat_type=#{mat_type.mtype_id} where mat_id=#{mat_id}	
+	</update>
+	</mapper>
